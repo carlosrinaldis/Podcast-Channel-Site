@@ -1,0 +1,36 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: 10px;
+}
+
+ul, li, a, button {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.ctBlock {
+  display: block;
+  overflow: hidden;
+  max-width: 575.98px;
+  min-width: 320px;
+  background-color: lightgray;
+}
+
+.ctBlock.-center {
+  margin: auto;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 44px;
+  background-color: blue;
+}
+/*# sourceMappingURL=style.css.map */
