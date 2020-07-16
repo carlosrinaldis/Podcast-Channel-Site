@@ -35,6 +35,15 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 10px;
+}
+
+header .-logo {
+  width: 30px;
+  height: 30px;
 }
 
 section {
@@ -109,6 +118,15 @@ button {
   -ms-flex-item-align: start;
       align-self: flex-start;
   width: 240px;
+  margin-top: 10px;
+}
+
+.intro p {
+  margin-top: 15px;
+}
+
+.intro button {
+  margin-top: 30px;
 }
 
 .intro .--desktop {
@@ -116,29 +134,46 @@ button {
 }
 
 .episodios {
-  height: 500px;
+  height: 1203px;
   background: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
   background: linear-gradient(#0000FF, #0000A3);
   text-align: left;
+  -webkit-transform: skewY(-5deg);
+          transform: skewY(-5deg);
+  margin-top: 30px;
 }
 
 .episodios h2 {
   color: #FFFFFF;
+  -webkit-transform: skewY(5deg);
+          transform: skewY(5deg);
+  margin-top: 20px;
+}
+
+.episodios .podcastBox {
+  height: 235px;
+  -webkit-transform: skewY(5deg);
+          transform: skewY(5deg);
+  margin-top: 11px;
+}
+
+.episodios .podcastBox:first-child {
+  margin-top: 21px;
 }
 
 .dondeVenimos {
+  position: relative;
   text-align: left;
 }
 
 .dondeVenimos img {
   width: 100%;
   position: relative;
-  top: -100px;
+  top: -90px;
 }
 
 .dondeVenimos h2, .dondeVenimos p {
   position: relative;
-  top: -100px;
 }
 
 .invitados {

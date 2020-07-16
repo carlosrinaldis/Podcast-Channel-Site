@@ -15,6 +15,13 @@ header {
     display: flex;
     height: 44px;
     justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+
+    .-logo {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 section {
@@ -76,6 +83,15 @@ button {
     h1 {
         align-self: flex-start;
         width: 240px;
+        margin-top: 10px;
+    }
+
+    p {
+        margin-top: 15px;
+    }
+
+    button {
+        margin-top: 30px;
     }
 
     .--desktop {
@@ -84,27 +100,41 @@ button {
 }
 
 .episodios {
-    height: 500px;
+    height: 1203px;
     background: $gradBkColor;
     text-align: left;
+    transform: skewY(-5deg);
+    margin-top: 30px;
 
     h2 {
         color: $altTextColor;
+        transform: skewY(5deg);
+        margin-top: 20px;
+    }
+
+    .podcastBox {
+        height: 235px;
+        transform: skewY(5deg);
+        margin-top: 11px;
+
+        &:first-child {
+            margin-top: 21px;
+        }
     }
 }
 
 .dondeVenimos {
+    position: relative;
     text-align: left;
 
     img {
         width: 100%;
         position: relative;
-        top: -100px;
+        top: -90px;
     }
 
     h2, p {
         position: relative;
-        top: -100px;
     }
 }
 
