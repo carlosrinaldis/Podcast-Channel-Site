@@ -84,6 +84,10 @@ button {
         align-self: flex-start;
         width: 240px;
         margin-top: 10px;
+
+        span {
+            text-decoration: line-through;
+        }
     }
 
     p {

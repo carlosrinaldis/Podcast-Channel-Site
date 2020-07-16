@@ -121,6 +121,10 @@ button {
   margin-top: 10px;
 }
 
+.intro h1 span {
+  text-decoration: line-through;
+}
+
 .intro p {
   margin-top: 15px;
 }
