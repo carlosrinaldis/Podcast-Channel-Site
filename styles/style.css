@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap");
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -19,7 +20,7 @@ ul, li, a, button {
   overflow: hidden;
   max-width: 575.98px;
   min-width: 320px;
-  background-color: lightgray;
+  background-color: #FFFFFF;
 }
 
 .ctBlock.-center {
@@ -31,6 +32,140 @@ header {
   display: -ms-flexbox;
   display: flex;
   height: 44px;
-  background-color: blue;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 16px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #060A24;
+}
+
+h1, h2 {
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 4.2rem;
+}
+
+h2 {
+  width: 288px;
+}
+
+p, button, a {
+  font-family: "IBM Plex Mono", monospace;
+  color: #060A24;
+}
+
+p {
+  width: 288px;
+  font-size: 1.4rem;
+}
+
+button {
+  width: 288px;
+  height: 48px;
+  border: 0px;
+  background-color: #00F3BB;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.intro {
+  text-align: left;
+}
+
+.intro h1 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 240px;
+}
+
+.intro .--desktop {
+  display: none;
+}
+
+.episodios {
+  height: 500px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
+  background: linear-gradient(#0000FF, #0000A3);
+  text-align: left;
+}
+
+.episodios h2 {
+  color: #FFFFFF;
+}
+
+.dondeVenimos {
+  text-align: left;
+}
+
+.dondeVenimos img {
+  width: 100%;
+  position: relative;
+  top: -100px;
+}
+
+.dondeVenimos h2, .dondeVenimos p {
+  position: relative;
+  top: -100px;
+}
+
+.invitados {
+  text-align: left;
+  padding: 0px;
+}
+
+.invitados img {
+  width: 100%;
+}
+
+.temas {
+  text-align: center;
+}
+
+.temas h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.novedades {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
+  background: linear-gradient(#0000FF, #0000A3);
+  text-align: center;
+}
+
+.novedades h2 {
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */

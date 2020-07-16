@@ -1,0 +1,138 @@
+
+.ctBlock {
+    display: block;
+    overflow: hidden;
+    max-width: 575.98px;
+    min-width: 320px;
+    background-color: $altBkColor;
+
+    &.-center {
+        margin: auto;
+    }
+}
+
+header {
+    display: flex;
+    height: 44px;
+    justify-content: space-between;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    align-items: center;
+    text-align: center;
+}
+
+// Text //
+h1, h2, h3, h4 ,h5, h6 {
+    font-family: $fontSans;
+    color: $mainTextColor;
+}
+
+h1, h2 {
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 4.2rem;
+}
+
+h2 {
+    width: 288px; 
+}
+
+p, button, a {
+    font-family: $fontMono;
+    color: $mainTextColor;
+}
+
+p {
+    width: 288px;
+    font-size: 1.4rem;
+}
+
+button {
+    width: 288px;
+    height: 48px;
+    border: 0px;
+    background-color: $mainBkColor;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+// Sections //
+
+.intro {
+    text-align: left;
+
+    h1 {
+        align-self: flex-start;
+        width: 240px;
+    }
+
+    .--desktop {
+            display: none;
+        }
+}
+
+.episodios {
+    height: 500px;
+    background: $gradBkColor;
+    text-align: left;
+
+    h2 {
+        color: $altTextColor;
+    }
+}
+
+.dondeVenimos {
+    text-align: left;
+
+    img {
+        width: 100%;
+        position: relative;
+        top: -100px;
+    }
+
+    h2, p {
+        position: relative;
+        top: -100px;
+    }
+}
+
+.invitados {
+    text-align: left;
+    padding: 0px;
+
+        img {
+            width: 100%;
+        }
+}
+
+.temas {
+
+    text-align: center;
+
+    h3 {
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+}
+
+.novedades {
+    background: $gradBkColor;
+    text-align: center;
+
+    h2 {
+        color: $altTextColor;
+    }
+}
+
