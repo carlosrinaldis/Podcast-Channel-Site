@@ -27,6 +27,17 @@ ul, li, a, button {
   margin: auto;
 }
 
+.ctGrid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.ctFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,6 +123,7 @@ button {
 
 .intro {
   text-align: left;
+  background-color: red;
 }
 
 .intro h1 {
@@ -121,7 +133,7 @@ button {
   margin-top: 10px;
 }
 
-.intro h1 span {
+.intro h1 span:first-child {
   text-decoration: line-through;
 }
 
@@ -141,23 +153,19 @@ button {
   height: 1203px;
   background: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
   background: linear-gradient(#0000FF, #0000A3);
+  -webkit-clip-path: polygon(0 2%, 0 100%, 100% 98%, 100% 0%);
+          clip-path: polygon(0 2%, 0 100%, 100% 98%, 100% 0%);
   text-align: left;
-  -webkit-transform: skewY(-5deg);
-          transform: skewY(-5deg);
-  margin-top: 30px;
+  margin-top: 8px;
 }
 
 .episodios h2 {
   color: #FFFFFF;
-  -webkit-transform: skewY(5deg);
-          transform: skewY(5deg);
-  margin-top: 20px;
+  margin-top: 44px;
 }
 
 .episodios .podcastBox {
   height: 235px;
-  -webkit-transform: skewY(5deg);
-          transform: skewY(5deg);
   margin-top: 11px;
 }
 
@@ -168,21 +176,35 @@ button {
 .dondeVenimos {
   position: relative;
   text-align: left;
+  background-color: red;
 }
 
 .dondeVenimos img {
   width: 100%;
   position: relative;
-  top: -90px;
+  top: -80px;
+  margin-bottom: -80px;
 }
 
-.dondeVenimos h2, .dondeVenimos p {
-  position: relative;
+.dondeVenimos h2 {
+  margin-top: 27px;
+}
+
+.dondeVenimos p {
+  margin-top: 8px;
 }
 
 .invitados {
   text-align: left;
   padding: 0px;
+}
+
+.invitados h2 {
+  margin-top: 38px;
+}
+
+.invitados .ctGrid {
+  margin-top: 14px;
 }
 
 .invitados img {
@@ -193,18 +215,63 @@ button {
   text-align: center;
 }
 
-.temas h3 {
+.temas h2 {
+  margin-top: 32px;
+}
+
+.temas .ctFlex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.temas .card {
+  margin-top: 65px;
+}
+
+.temas .card h3 {
+  margin-top: 13px;
   font-size: 2.4rem;
   font-weight: 600;
 }
 
+.temas .card:first-child {
+  margin-top: 37px;
+}
+
+.temas .card:nth-child(2) {
+  margin-top: 49px;
+}
+
 .novedades {
+  height: 341px;
   background: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
   background: linear-gradient(#0000FF, #0000A3);
   text-align: center;
+  -webkit-clip-path: polygon(0 6%, 0 100%, 100% 100%, 100% 0);
+          clip-path: polygon(0 6%, 0 100%, 100% 100%, 100% 0);
+  margin-top: 26px;
 }
 
 .novedades h2 {
   color: #FFFFFF;
+  margin-top: 48px;
+}
+
+.novedades button {
+  margin-top: 36px;
+}
+
+footer {
+  height: 121px;
+}
+
+footer p {
+  margin-top: 8px;
+}
+
+footer aside {
+  margin-top: 16px;
 }
 /*# sourceMappingURL=style.css.map */

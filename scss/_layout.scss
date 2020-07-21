@@ -11,6 +11,15 @@
     }
 }
 
+.ctGrid {
+    display: grid;
+}
+
+.ctFlex {
+    display: flex;
+
+}
+
 header {
     display: flex;
     height: 44px;
@@ -79,13 +88,14 @@ button {
 
 .intro {
     text-align: left;
+    background-color: red;
 
     h1 {
         align-self: flex-start;
         width: 240px;
         margin-top: 10px;
 
-        span {
+        span:first-child {
             text-decoration: line-through;
         }
     }
@@ -106,45 +116,58 @@ button {
 .episodios {
     height: 1203px;
     background: $gradBkColor;
+    clip-path: polygon(0 2%, 0 100%, 100% 98%, 100% 0%);
     text-align: left;
-    transform: skewY(-5deg);
-    margin-top: 30px;
+    margin-top: 8px;
 
     h2 {
         color: $altTextColor;
-        transform: skewY(5deg);
-        margin-top: 20px;
+        margin-top: 44px;
     }
 
     .podcastBox {
         height: 235px;
-        transform: skewY(5deg);
         margin-top: 11px;
 
         &:first-child {
             margin-top: 21px;
         }
     }
+
 }
 
 .dondeVenimos {
     position: relative;
     text-align: left;
+    background-color: red;
 
     img {
         width: 100%;
         position: relative;
-        top: -90px;
+        top: -80px;
+        margin-bottom: -80px;
     }
 
-    h2, p {
-        position: relative;
+    h2 {
+        margin-top: 27px;
+    }
+
+    p {
+        margin-top: 8px;
     }
 }
 
 .invitados {
     text-align: left;
     padding: 0px;
+
+        h2 {
+            margin-top: 38px;
+        }
+
+        .ctGrid {
+            margin-top: 14px;
+        }
 
         img {
             width: 100%;
@@ -155,18 +178,60 @@ button {
 
     text-align: center;
 
-    h3 {
-        font-size: 2.4rem;
-        font-weight: 600;
+    h2 {
+        margin-top: 32px;
+    }
+
+    .ctFlex{
+        flex-direction: column;
+    }
+
+    .card {
+
+        margin-top: 65px;
+
+        h3 {
+            margin-top: 13px;
+            font-size: 2.4rem;
+            font-weight: 600;
+        }
+
+        &:first-child {
+            margin-top: 37px;
+        }
+
+        &:nth-child(2) {
+            margin-top: 49px;
+        }
     }
 }
 
 .novedades {
+    height: 341px;
     background: $gradBkColor;
     text-align: center;
+    clip-path: polygon(0 6%, 0 100%, 100% 100%, 100% 0);
+    margin-top: 26px;
 
     h2 {
         color: $altTextColor;
+        margin-top: 48px;
+    }
+
+    button {
+        margin-top: 36px;
     }
 }
 
+footer {
+    height: 121px;
+
+    p {
+        margin-top: 8px;
+    }
+
+    aside {
+        margin-top: 16px;
+    }
+
+}
