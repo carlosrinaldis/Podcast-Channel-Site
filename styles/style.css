@@ -38,25 +38,6 @@ ul, li, a, button {
   display: flex;
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 44px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0px 10px;
-}
-
-header .-logo {
-  width: 30px;
-  height: 30px;
-}
-
 section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,7 +83,7 @@ h2 {
   width: 288px;
 }
 
-p, button, a {
+p, button, a, li {
   font-family: "IBM Plex Mono", monospace;
   color: #060A24;
 }
@@ -121,16 +102,77 @@ button {
   font-size: 1.6rem;
 }
 
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 44px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 16px;
+}
+
+header .-logo {
+  width: 24px;
+  height: 24px;
+}
+
+header nav {
+  position: relative;
+}
+
+header nav input {
+  display: none;
+}
+
+header nav label {
+  font-size: 1.4rem;
+}
+
+header nav .menu {
+  display: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  min-width: 320px;
+  height: 200px;
+  top: 30px;
+  left: -292px;
+  padding: 16px;
+  background-color: #0000EC;
+}
+
+header nav .menu li {
+  margin-top: 24px;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+header nav .menu li:first-child {
+  margin-top: 0px;
+}
+
+header nav .menu li a {
+  color: #FFFFFF;
+}
+
+header nav #menuCheckbox:checked ~ .menu {
+  display: block;
+}
+
 .intro {
   text-align: left;
-  background-color: red;
 }
 
 .intro h1 {
   -ms-flex-item-align: start;
       align-self: flex-start;
   width: 240px;
-  margin-top: 10px;
+  margin-top: 13px;
 }
 
 .intro h1 span:first-child {
@@ -138,11 +180,11 @@ button {
 }
 
 .intro p {
-  margin-top: 15px;
+  margin-top: 16px;
 }
 
 .intro button {
-  margin-top: 30px;
+  margin-top: 36px;
 }
 
 .intro .--desktop {
@@ -164,6 +206,13 @@ button {
   margin-top: 44px;
 }
 
+.episodios .ctFlex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .episodios .podcastBox {
   height: 235px;
   margin-top: 11px;
@@ -176,7 +225,6 @@ button {
 .dondeVenimos {
   position: relative;
   text-align: left;
-  background-color: red;
 }
 
 .dondeVenimos img {
@@ -273,5 +321,17 @@ footer p {
 
 footer aside {
   margin-top: 16px;
+}
+
+footer aside span {
+  font-size: 1.6rem;
+  color: #060A24;
+}
+
+footer aside.ctFlex {
+  width: 227px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */

@@ -20,19 +20,6 @@
 
 }
 
-header {
-    display: flex;
-    height: 44px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 10px;
-
-    .-logo {
-        width: 30px;
-        height: 30px;
-    }
-}
-
 section {
     display: flex;
     flex-direction: column;
@@ -65,7 +52,7 @@ h2 {
     width: 288px; 
 }
 
-p, button, a {
+p, button, a, li{
     font-family: $fontMono;
     color: $mainTextColor;
 }
@@ -86,14 +73,72 @@ button {
 
 // Sections //
 
+header {
+    display: flex;
+    height: 44px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+
+    .-logo {
+        width: 24px;
+        height: 24px;
+    }
+
+    nav {
+        position: relative;
+
+        input {
+            display: none;
+        }
+
+        label {
+            font-size: 1.4rem;
+        }
+
+        .menu {
+            display: none;
+            box-sizing: border-box;
+            position: absolute;
+            min-width: 320px;
+            height: 200px;
+            top:30px;
+            left: -292px;
+            padding: 16px;
+            background-color: #0000EC;
+
+
+
+            li {
+                margin-top: 24px;
+                font-size: 1.6rem;
+                text-transform: uppercase;
+        
+                &:first-child {
+                    margin-top: 0px;
+                }
+
+                a {
+                    color: $altTextColor;
+                }
+            }
+
+        }
+
+        #menuCheckbox:checked ~ .menu {
+            display: block;
+        }
+    }
+}
+
 .intro {
     text-align: left;
-    background-color: red;
+
 
     h1 {
         align-self: flex-start;
         width: 240px;
-        margin-top: 10px;
+        margin-top: 13px;
 
         span:first-child {
             text-decoration: line-through;
@@ -101,11 +146,11 @@ button {
     }
 
     p {
-        margin-top: 15px;
+        margin-top: 16px;
     }
 
     button {
-        margin-top: 30px;
+        margin-top: 36px;
     }
 
     .--desktop {
@@ -125,6 +170,10 @@ button {
         margin-top: 44px;
     }
 
+    .ctFlex {
+        flex-direction: column;
+    }
+
     .podcastBox {
         height: 235px;
         margin-top: 11px;
@@ -139,7 +188,7 @@ button {
 .dondeVenimos {
     position: relative;
     text-align: left;
-    background-color: red;
+
 
     img {
         width: 100%;
@@ -232,6 +281,16 @@ footer {
 
     aside {
         margin-top: 16px;
+
+        span {
+            font-size: 1.6rem;
+            color: $mainTextColor;
+        }
+
+        &.ctFlex {
+            width: 227px;
+            justify-content: space-between;
+        }
     }
 
 }

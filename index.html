@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/style.css">
     <title>Acamica Podcast Channel</title>
+    <script src="https://kit.fontawesome.com/d63b605340.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -13,12 +14,13 @@
         <header>
             <a href="#"><img src="/assets/logo.svg" alt="" class="-logo"></a>
             <nav>
-                <ul>
-                    <!-- <li>Episodios</li>
-                    <li>Nosotros</li>
-                    <li>Entrevistas</li>
-                    <li>T&oacute;picos</li> -->
-                    <li>=</li>
+                <input type="checkbox" name="menu" id="menuCheckbox">
+                <label for="menuCheckbox"><span class="fa fa-bars"></span></label>
+                <ul class="menu">
+                    <li><a href="#">Episodios</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Entrevistas</a></li>
+                    <li><a href="#">T&oacute;picos</a></li>
                 </ul>
             </nav>
         </header>
@@ -97,12 +99,12 @@
         </main>
         <footer>
             <p>© 2019— Hello blue pale dot</p>
-            <aside>
-                <a href="#">SP</a>
-                <a href="#">IG</a>
-                <a href="#">TW</a>
-                <a href="#">FB</a>
-                <a href="#">TL</a>
+            <aside class="ctFlex">
+                <a href="#"><span class="fab fa-spotify"></span></a>
+                <a href="#"><span class="fab fa-instagram"></span></a>
+                <a href="#"><span class="fab fa-twitter"></span></a>
+                <a href="#"><span class="fab fa-facebook"></span></a>
+                <a href="#"><span class="fab fa-telegram"></span></a>
             </aside>
         </footer>
     </div>
