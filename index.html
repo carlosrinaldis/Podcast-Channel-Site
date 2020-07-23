@@ -13,26 +13,29 @@
     <div class="ctBlock -center">
         <header>
             <a href="#"><img src="/assets/logo.svg" alt="" class="-logo"></a>
-            <nav>
+            <nav class="menu">
                 <input type="checkbox" name="menu" id="menuCheckbox">
-                <label for="menuCheckbox"><span class="fa fa-bars"></span></label>
-                <ul class="menu">
-                    <li><a href="#">Episodios</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Entrevistas</a></li>
-                    <li><a href="#">T&oacute;picos</a></li>
+                <label for="menuCheckbox">
+                    <span class="-burgerOpen">&#8801</span>
+                    <span class="-burgerClose">x</span>
+                </label>
+                <ul class="-items">
+                    <li><a href="#episodios">Episodios</a></li>
+                    <li><a href="#dondeVenimos">Nosotros</a></li>
+                    <li><a href="#invitados">Entrevistas</a></li>
+                    <li><a href="#temas">T&oacute;picos</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section class="intro">
+            <section id="intro">
                 <h1>Hello <span>world</span> pale blue dot<span>.</span></h1>
                 <p class="--mobile">Un podcast que explora el mundo de la programaci&oacute;n. Nuevos episodios, todos los jueves cada 15 d&iacute;as.</p>
                 <p class="--desktop">El portal de podcasts que explora el mundo de la programaci&oacute;n y la tecnolog&iacute;a. Nuevos
                     episodios todos los jueves, cada 15 d&iacute;as.</p>
-                <button>CONOC&Eacute; M&Aacute;S</button>
+                <a href="#dondeVenimos"><button>CONOC&Eacute; M&Aacute;S</button></a>
             </section>
-            <section class="episodios">
+            <section id="episodios">
                 <h2>Episodios</h2>
                 <div class="ctFlex">
                     <div class="podcastBox">
@@ -49,7 +52,7 @@
                     </div>
                 </div>
             </section>
-            <section class="dondeVenimos">
+            <section id="dondeVenimos">
                 <img src="/assets/phone.png" alt="">
                 <h2>De d&oacute;nde venimos</h2>
                 <p>
@@ -60,7 +63,7 @@
                     vastness, there is no hint that help will come from elsewhere to save us from ourselves.
                 </p>
             </section>
-            <section class="invitados">
+            <section id="invitados">
                 <h2>Invitadas/os estelares</h2>
                 <div class="ctGrid">
                     <img src="/assets/grace-hopper.png" alt="">
@@ -71,7 +74,7 @@
                     <img src="/assets/susan-kare.png" alt="">
                 </div>
             </section>
-            <section class="temas">
+            <section id="temas">
                 <h2>Algunos de nuestros temas</h2>
                 <div class="ctFlex">
                     <div class="card">
@@ -92,9 +95,9 @@
                     </div>
                 </div>
             </section>
-            <section class="novedades">
+            <section id="novedades">
                 <h2>¿Querés las últimas novedades?</h2>
-                <button>ESCUCH&Aacute; LOS EPISODIOS</button>
+                <a href="#episodios"><button>ESCUCH&Aacute; LOS EPISODIOS</button></a>
             </section>
         </main>
         <footer>

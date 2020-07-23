@@ -78,14 +78,14 @@ header {
     height: 44px;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 16px;
+    padding: 10px 16px;
 
     .-logo {
         width: 24px;
         height: 24px;
     }
 
-    nav {
+    .menu {
         position: relative;
 
         input {
@@ -93,21 +93,39 @@ header {
         }
 
         label {
-            font-size: 1.4rem;
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            text-align: center;
         }
 
-        .menu {
+        .-burgerOpen {
+            line-height: 8px;
+            font-size: 3rem;
+            font-family: $fontMono;
+            vertical-align: bottom;
+            color: #060A24;
+        }
+
+        .-burgerClose {
+            display: none;
+            line-height: 8px;
+            font-size: 2rem;
+            font-family: $fontMono;
+            font-weight: 500;
+            color: #060A24;
+        }
+
+        .-items {
             display: none;
             box-sizing: border-box;
             position: absolute;
             min-width: 320px;
             height: 200px;
-            top:30px;
-            left: -292px;
+            top: 31px;
+            left: -286px;
             padding: 16px;
             background-color: #0000EC;
-
-
 
             li {
                 margin-top: 24px;
@@ -125,13 +143,22 @@ header {
 
         }
 
-        #menuCheckbox:checked ~ .menu {
+        #menuCheckbox:checked ~ .-items {
             display: block;
+        }
+
+        #menuCheckbox:checked ~ label .-burgerOpen {
+            display: none;
+        }
+
+        #menuCheckbox:checked ~ label .-burgerClose {
+            display: inline-block;
+            vertical-align: bottom;
         }
     }
 }
 
-.intro {
+#intro {
     text-align: left;
 
 
@@ -158,7 +185,7 @@ header {
         }
 }
 
-.episodios {
+#episodios {
     height: 1203px;
     background: $gradBkColor;
     clip-path: polygon(0 2%, 0 100%, 100% 98%, 100% 0%);
@@ -185,7 +212,7 @@ header {
 
 }
 
-.dondeVenimos {
+#dondeVenimos {
     position: relative;
     text-align: left;
 
@@ -206,7 +233,7 @@ header {
     }
 }
 
-.invitados {
+#invitados {
     text-align: left;
     padding: 0px;
 
@@ -223,7 +250,7 @@ header {
         }
 }
 
-.temas {
+#temas {
 
     text-align: center;
 
@@ -255,7 +282,7 @@ header {
     }
 }
 
-.novedades {
+#novedades {
     height: 341px;
     background: $gradBkColor;
     text-align: center;

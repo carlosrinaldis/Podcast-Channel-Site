@@ -113,7 +113,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 16px;
+  padding: 10px 16px;
 }
 
 header .-logo {
@@ -121,77 +121,106 @@ header .-logo {
   height: 24px;
 }
 
-header nav {
+header .menu {
   position: relative;
 }
 
-header nav input {
+header .menu input {
   display: none;
 }
 
-header nav label {
-  font-size: 1.4rem;
+header .menu label {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  text-align: center;
 }
 
-header nav .menu {
+header .menu .-burgerOpen {
+  line-height: 8px;
+  font-size: 3rem;
+  font-family: "IBM Plex Mono", monospace;
+  vertical-align: bottom;
+  color: #060A24;
+}
+
+header .menu .-burgerClose {
+  display: none;
+  line-height: 8px;
+  font-size: 2rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  color: #060A24;
+}
+
+header .menu .-items {
   display: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: absolute;
   min-width: 320px;
   height: 200px;
-  top: 30px;
-  left: -292px;
+  top: 31px;
+  left: -286px;
   padding: 16px;
   background-color: #0000EC;
 }
 
-header nav .menu li {
+header .menu .-items li {
   margin-top: 24px;
   font-size: 1.6rem;
   text-transform: uppercase;
 }
 
-header nav .menu li:first-child {
+header .menu .-items li:first-child {
   margin-top: 0px;
 }
 
-header nav .menu li a {
+header .menu .-items li a {
   color: #FFFFFF;
 }
 
-header nav #menuCheckbox:checked ~ .menu {
+header .menu #menuCheckbox:checked ~ .-items {
   display: block;
 }
 
-.intro {
+header .menu #menuCheckbox:checked ~ label .-burgerOpen {
+  display: none;
+}
+
+header .menu #menuCheckbox:checked ~ label .-burgerClose {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+#intro {
   text-align: left;
 }
 
-.intro h1 {
+#intro h1 {
   -ms-flex-item-align: start;
       align-self: flex-start;
   width: 240px;
   margin-top: 13px;
 }
 
-.intro h1 span:first-child {
+#intro h1 span:first-child {
   text-decoration: line-through;
 }
 
-.intro p {
+#intro p {
   margin-top: 16px;
 }
 
-.intro button {
+#intro button {
   margin-top: 36px;
 }
 
-.intro .--desktop {
+#intro .--desktop {
   display: none;
 }
 
-.episodios {
+#episodios {
   height: 1203px;
   background: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
   background: linear-gradient(#0000FF, #0000A3);
@@ -201,98 +230,98 @@ header nav #menuCheckbox:checked ~ .menu {
   margin-top: 8px;
 }
 
-.episodios h2 {
+#episodios h2 {
   color: #FFFFFF;
   margin-top: 44px;
 }
 
-.episodios .ctFlex {
+#episodios .ctFlex {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.episodios .podcastBox {
+#episodios .podcastBox {
   height: 235px;
   margin-top: 11px;
 }
 
-.episodios .podcastBox:first-child {
+#episodios .podcastBox:first-child {
   margin-top: 21px;
 }
 
-.dondeVenimos {
+#dondeVenimos {
   position: relative;
   text-align: left;
 }
 
-.dondeVenimos img {
+#dondeVenimos img {
   width: 100%;
   position: relative;
   top: -80px;
   margin-bottom: -80px;
 }
 
-.dondeVenimos h2 {
+#dondeVenimos h2 {
   margin-top: 27px;
 }
 
-.dondeVenimos p {
+#dondeVenimos p {
   margin-top: 8px;
 }
 
-.invitados {
+#invitados {
   text-align: left;
   padding: 0px;
 }
 
-.invitados h2 {
+#invitados h2 {
   margin-top: 38px;
 }
 
-.invitados .ctGrid {
+#invitados .ctGrid {
   margin-top: 14px;
 }
 
-.invitados img {
+#invitados img {
   width: 100%;
 }
 
-.temas {
+#temas {
   text-align: center;
 }
 
-.temas h2 {
+#temas h2 {
   margin-top: 32px;
 }
 
-.temas .ctFlex {
+#temas .ctFlex {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.temas .card {
+#temas .card {
   margin-top: 65px;
 }
 
-.temas .card h3 {
+#temas .card h3 {
   margin-top: 13px;
   font-size: 2.4rem;
   font-weight: 600;
 }
 
-.temas .card:first-child {
+#temas .card:first-child {
   margin-top: 37px;
 }
 
-.temas .card:nth-child(2) {
+#temas .card:nth-child(2) {
   margin-top: 49px;
 }
 
-.novedades {
+#novedades {
   height: 341px;
   background: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
   background: linear-gradient(#0000FF, #0000A3);
@@ -302,12 +331,12 @@ header nav #menuCheckbox:checked ~ .menu {
   margin-top: 26px;
 }
 
-.novedades h2 {
+#novedades h2 {
   color: #FFFFFF;
   margin-top: 48px;
 }
 
-.novedades button {
+#novedades button {
   margin-top: 36px;
 }
 
