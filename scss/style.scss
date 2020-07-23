@@ -10,3 +10,6 @@
     @import 'layout';
 // }
 
+@media (min-width: $minDesktop) {
+    @import 'layout-desktop';
+}
