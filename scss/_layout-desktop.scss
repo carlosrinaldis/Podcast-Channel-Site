@@ -1,7 +1,7 @@
 .ctBlock {
 
-    max-width: 1440px;
-    min-width: $minDesktop;
+    max-width: 1440px; //
+    min-width: $minDesktop; //
 }
 
 section {
@@ -121,13 +121,9 @@ header {
 
 #episodios {
     height: 1042px; //
-    background: $gradBkColor;
     clip-path: polygon(0 12%, 0 100%, 100% 88%, 100% 0%); //
-    text-align: left;
-    margin-top: 8px;
 
     h2 {
-        color: $altTextColor;
         margin-top: 186px; //
         margin-left: 200px; //
         align-self: flex-start; //
@@ -144,7 +140,7 @@ header {
     .podcastBox {
         width: 584px; //
         height: 232px; //
-        margin-top: unset;
+        margin-top: unset; //
 
         &:first-child {
             margin-top: unset; //
@@ -154,39 +150,121 @@ header {
 }
 
 #dondeVenimos {
-    position: relative;
-    text-align: left;
-
+    display: grid; //
+    grid-template-areas: 
+            "a b"
+            "a c"; //
+    grid-template-columns: 458px 464px; //
+    grid-column-gap: 63px; //
+    grid-row-gap: 24px; //
+    margin: auto; //
+    width: 1040px; //
+    text-align: unset; // 
+    overflow: hidden;
+    top: -180px; //
+    margin-bottom: -180px; //
 
     img {
-        width: 100%;
-        position: relative;
-        top: -80px;
-        margin-bottom: -80px;
+        width: 458px; //
+        position: unset; //
+        top: 0px; //
+        margin-bottom: 0px; //
+        grid-area: a; //
     }
 
     h2 {
-        margin-top: 27px;
+        grid-area: b; //
+        align-self: end; //
     }
 
     p {
-        margin-top: 8px;
+        width: auto; //
+        margin-top: 0px; //
+        grid-area: c; //
+        align-self: start; //
     }
 }
 
 #invitados {
-    text-align: left;
-    padding: 0px;
 
         h2 {
-            margin-top: 38px;
+            margin-top: 64px; //
+            align-self: flex-start; //
+            margin-left: 200px; //
         }
 
         .ctGrid {
-            margin-top: 14px;
+            margin-top: 36px; //
+            grid-template-columns: 1fr 1fr 1fr; //
+
+        }
+}
+
+#temas {
+
+    text-align: center;
+
+    h2 {
+        margin-top: 64px; //
+        text-align: left; //
+        width: auto; //
+        align-self: flex-start; //
+        margin-left: 200px; //
+    }
+
+    .ctFlex{
+        flex-direction: row; //
+    }
+
+    .card {
+
+        margin-top: 69px; //
+
+        h3 {
+            width: 220px; //
+            margin-top: 29px; //
+            font-size: 2.4rem;
+            font-weight: 600;
         }
 
-        img {
-            width: 100%;
+        &:first-child {
+            margin-top: 69px; //
         }
+
+        &:nth-child(2) {
+            margin-top: 69px; //
+        }
+    }
+}
+
+#novedades {
+    height: 518px; //
+    background: $gradBkColor;
+    text-align: center;
+    clip-path: polygon(0 25%, 0 100%, 100% 100%, 100% 0); //
+    margin-top: 34px; //
+
+    h2 {
+        color: $altTextColor;
+        margin-top: 213px; //
+        width: 692px; //
+    }
+
+    button {
+        width: 345px; //
+        margin-top: 36px;
+    }
+}
+
+footer {
+    height: 95px; //
+    margin: auto; //
+    flex-direction: row; //
+    justify-content: space-between; //
+    padding: 0 100px;
+
+    p {
+        width: 269px; //
+    }
+
 }

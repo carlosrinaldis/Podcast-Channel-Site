@@ -481,15 +481,10 @@ footer aside.ctFlex {
   }
   #episodios {
     height: 1042px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
-    background: linear-gradient(#0000FF, #0000A3);
     -webkit-clip-path: polygon(0 12%, 0 100%, 100% 88%, 100% 0%);
             clip-path: polygon(0 12%, 0 100%, 100% 88%, 100% 0%);
-    text-align: left;
-    margin-top: 8px;
   }
   #episodios h2 {
-    color: #FFFFFF;
     margin-top: 186px;
     margin-left: 200px;
     -ms-flex-item-align: start;
@@ -515,33 +510,123 @@ footer aside.ctFlex {
     margin-top: unset;
   }
   #dondeVenimos {
-    position: relative;
-    text-align: left;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "a b" "a c";
+    -ms-grid-columns: 458px 464px;
+        grid-template-columns: 458px 464px;
+    grid-column-gap: 63px;
+    grid-row-gap: 24px;
+    margin: auto;
+    width: 1040px;
+    text-align: unset;
+    overflow: hidden;
+    top: -180px;
+    margin-bottom: -180px;
   }
   #dondeVenimos img {
-    width: 100%;
-    position: relative;
-    top: -80px;
-    margin-bottom: -80px;
+    width: 458px;
+    position: unset;
+    top: 0px;
+    margin-bottom: 0px;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: a;
   }
   #dondeVenimos h2 {
-    margin-top: 27px;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: b;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
   }
   #dondeVenimos p {
-    margin-top: 8px;
-  }
-  #invitados {
-    text-align: left;
-    padding: 0px;
+    width: auto;
+    margin-top: 0px;
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: c;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
   }
   #invitados h2 {
-    margin-top: 38px;
+    margin-top: 64px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 200px;
   }
   #invitados .ctGrid {
-    margin-top: 14px;
+    margin-top: 36px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
-  #invitados img {
-    width: 100%;
+  #temas {
+    text-align: center;
+  }
+  #temas h2 {
+    margin-top: 64px;
+    text-align: left;
+    width: auto;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 200px;
+  }
+  #temas .ctFlex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #temas .card {
+    margin-top: 69px;
+  }
+  #temas .card h3 {
+    width: 220px;
+    margin-top: 29px;
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+  #temas .card:first-child {
+    margin-top: 69px;
+  }
+  #temas .card:nth-child(2) {
+    margin-top: 69px;
+  }
+  #novedades {
+    height: 518px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
+    background: linear-gradient(#0000FF, #0000A3);
+    text-align: center;
+    -webkit-clip-path: polygon(0 25%, 0 100%, 100% 100%, 100% 0);
+            clip-path: polygon(0 25%, 0 100%, 100% 100%, 100% 0);
+    margin-top: 34px;
+  }
+  #novedades h2 {
+    color: #FFFFFF;
+    margin-top: 213px;
+    width: 692px;
+  }
+  #novedades button {
+    width: 345px;
+    margin-top: 36px;
+  }
+  footer {
+    height: 95px;
+    margin: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 100px;
+  }
+  footer p {
+    width: 269px;
   }
 }
 /*# sourceMappingURL=style.css.map */
