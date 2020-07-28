@@ -6,9 +6,7 @@
 
 
 // El sccs de layout de miniMobile va dentro de este mediaquerry
-// @media (max-width: $maxMiniMobile) {
-    @import 'layout';
-// }
+@import 'layout';
 
 @media (min-width: $minDesktop) {
     @import 'layout-desktop';

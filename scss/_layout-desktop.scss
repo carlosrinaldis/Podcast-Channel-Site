@@ -1,0 +1,192 @@
+.ctBlock {
+
+    max-width: 1440px;
+    min-width: $minDesktop;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0px; //
+}
+
+// Text //
+
+p {
+
+    width: 629px; //
+    font-size: 1.6rem; //
+}
+
+h1 {
+    font-size: 6.4rem; //
+    line-height: 6.4rem; //
+    font-weight: unset; //
+}
+
+h2 {
+    font-size: 4.8rem; //
+}
+
+button {
+    width: 226px; //
+    height: 56px; //
+    border: 0px;
+    background-color: $mainBkColor;
+    font-weight: 500;
+    font-size: 1.8rem; //
+}
+
+// Sections //
+
+header {
+    display: flex;
+    height: 80px; //
+    padding: 22px 100px; //
+
+    .-logo {
+        width: 36px; //
+        height: 36px; //
+    }
+
+    // Menu Hamburguesa Responsivo //
+    
+    .menu {
+
+        label {
+            display: none; //
+        }
+
+        .-items {
+            display: flex; //
+            position: relative; //
+            min-width: 433px; //
+            height: 36px; //
+            top: 0; //
+            left: 0; //
+            padding: 0px; //
+            background-color: unset; //
+            align-items: center; //
+            justify-content: space-between; //
+
+            li {
+                margin-top: 0px; //
+                margin-left: 48px; //
+        
+                a {
+                    color: $mainTextColor; //
+                }
+            }
+        }
+    }
+}
+
+#intro {
+    margin-left: 200px; //
+    align-items: left;
+
+
+    h1 {
+        width: auto; //
+        margin-top: 120px; //
+
+        span:last-child {
+            color: #0000EC; //
+        }
+    }
+
+    p {
+        margin-top: 16px;
+        align-self: flex-start; //
+    }
+
+    a {
+        align-self: flex-start; //
+    }
+
+    button {
+        margin-top: 56px; //
+    }
+
+    .--desktop {
+            display: block; //
+        }
+
+    .--mobile {
+        display: none; //
+    }
+}
+
+#episodios {
+    height: 1042px; //
+    background: $gradBkColor;
+    clip-path: polygon(0 12%, 0 100%, 100% 88%, 100% 0%); //
+    text-align: left;
+    margin-top: 8px;
+
+    h2 {
+        color: $altTextColor;
+        margin-top: 186px; //
+        margin-left: 200px; //
+        align-self: flex-start; //
+    }
+
+    .ctFlex {
+        width: 1240px; //
+        flex-direction: row; //
+        flex-wrap: wrap; //
+        gap: 72px; //
+        margin-top: 26px; //
+    }
+
+    .podcastBox {
+        width: 584px; //
+        height: 232px; //
+        margin-top: unset;
+
+        &:first-child {
+            margin-top: unset; //
+        }
+    }
+
+}
+
+#dondeVenimos {
+    position: relative;
+    text-align: left;
+
+
+    img {
+        width: 100%;
+        position: relative;
+        top: -80px;
+        margin-bottom: -80px;
+    }
+
+    h2 {
+        margin-top: 27px;
+    }
+
+    p {
+        margin-top: 8px;
+    }
+}
+
+#invitados {
+    text-align: left;
+    padding: 0px;
+
+        h2 {
+            margin-top: 38px;
+        }
+
+        .ctGrid {
+            margin-top: 14px;
+        }
+
+        img {
+            width: 100%;
+        }
+}

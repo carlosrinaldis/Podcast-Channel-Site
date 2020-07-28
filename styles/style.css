@@ -251,6 +251,12 @@ header .menu #menuCheckbox:checked ~ label .-burgerClose {
   margin-top: 21px;
 }
 
+#episodios .podcastBox iframe {
+  width: 100%;
+  height: 100%;
+  border: 0px;
+}
+
 #dondeVenimos {
   position: relative;
   text-align: left;
@@ -362,5 +368,180 @@ footer aside.ctFlex {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (min-width: 992px) {
+  .ctBlock {
+    max-width: 1440px;
+    min-width: 992px;
+  }
+  section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 0px;
+  }
+  p {
+    width: 629px;
+    font-size: 1.6rem;
+  }
+  h1 {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+    font-weight: unset;
+  }
+  h2 {
+    font-size: 4.8rem;
+  }
+  button {
+    width: 226px;
+    height: 56px;
+    border: 0px;
+    background-color: #00F3BB;
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80px;
+    padding: 22px 100px;
+  }
+  header .-logo {
+    width: 36px;
+    height: 36px;
+  }
+  header .menu label {
+    display: none;
+  }
+  header .menu .-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    min-width: 433px;
+    height: 36px;
+    top: 0;
+    left: 0;
+    padding: 0px;
+    background-color: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .menu .-items li {
+    margin-top: 0px;
+    margin-left: 48px;
+  }
+  header .menu .-items li a {
+    color: #060A24;
+  }
+  #intro {
+    margin-left: 200px;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
+  #intro h1 {
+    width: auto;
+    margin-top: 120px;
+  }
+  #intro h1 span:last-child {
+    color: #0000EC;
+  }
+  #intro p {
+    margin-top: 16px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  #intro a {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  #intro button {
+    margin-top: 56px;
+  }
+  #intro .--desktop {
+    display: block;
+  }
+  #intro .--mobile {
+    display: none;
+  }
+  #episodios {
+    height: 1042px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
+    background: linear-gradient(#0000FF, #0000A3);
+    -webkit-clip-path: polygon(0 12%, 0 100%, 100% 88%, 100% 0%);
+            clip-path: polygon(0 12%, 0 100%, 100% 88%, 100% 0%);
+    text-align: left;
+    margin-top: 8px;
+  }
+  #episodios h2 {
+    color: #FFFFFF;
+    margin-top: 186px;
+    margin-left: 200px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  #episodios .ctFlex {
+    width: 1240px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 72px;
+    margin-top: 26px;
+  }
+  #episodios .podcastBox {
+    width: 584px;
+    height: 232px;
+    margin-top: unset;
+  }
+  #episodios .podcastBox:first-child {
+    margin-top: unset;
+  }
+  #dondeVenimos {
+    position: relative;
+    text-align: left;
+  }
+  #dondeVenimos img {
+    width: 100%;
+    position: relative;
+    top: -80px;
+    margin-bottom: -80px;
+  }
+  #dondeVenimos h2 {
+    margin-top: 27px;
+  }
+  #dondeVenimos p {
+    margin-top: 8px;
+  }
+  #invitados {
+    text-align: left;
+    padding: 0px;
+  }
+  #invitados h2 {
+    margin-top: 38px;
+  }
+  #invitados .ctGrid {
+    margin-top: 14px;
+  }
+  #invitados img {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
