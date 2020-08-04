@@ -75,6 +75,7 @@ button {
 // Sections //
 
 header {
+    position: relative;
     display: flex;
     height: 44px;
     justify-content: space-between;
@@ -87,9 +88,8 @@ header {
     }
 
     // Menu Hamburguesa Responsivo //
-    
+
     .menu {
-        position: relative;
 
         input {
             display: none;
@@ -124,9 +124,10 @@ header {
             box-sizing: border-box;
             position: absolute;
             min-width: 320px;
+            width: 100%;
             height: 200px;
-            top: 31px;
-            left: -286px;
+            top: 44px;
+            left: 0px;
             padding: 16px;
             background-color: #0000EC;
 
@@ -166,8 +167,8 @@ header {
 
 
     h1 {
-        align-self: flex-start;
-        width: 240px;
+        align-self: center;
+        width: 288px;
         margin-top: 13px;
 
         span:first-child {
