@@ -8,8 +8,9 @@ $fontSans: 'IBM Plex Sans', sans-serif;
 
 $mainTextColor: #060A24;
 $altTextColor: #FFFFFF;
+$hoverTextColor: #00F3BB;
 
 $mainBkColor: #00F3BB;
 $altBkColor: #FFFFFF;
 $gradBkColor:linear-gradient(#0000FF, #0000A3);
-$gradBtColor:linear-gradient(#0000FE, #00F0B8);
+$gradBtColor:linear-gradient(to left, #0000FE, #00F0B8);

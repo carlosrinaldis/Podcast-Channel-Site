@@ -404,10 +404,12 @@ footer aside.ctFlex {
   button {
     width: 226px;
     height: 56px;
-    border: 0px;
-    background-color: #00F3BB;
-    font-weight: 500;
     font-size: 1.8rem;
+  }
+  button:hover {
+    color: #FFFFFF;
+    background: -webkit-gradient(linear, right top, left top, from(#0000FE), to(#00F0B8));
+    background: linear-gradient(to left, #0000FE, #00F0B8);
   }
   header {
     display: -webkit-box;
@@ -447,6 +449,16 @@ footer aside.ctFlex {
   }
   header .menu .-items li a {
     color: #060A24;
+  }
+  header .menu .-items li a:hover {
+    text-decoration: line-through;
+    color: #00F3BB;
+    font-weight: 500;
+  }
+  header .menu .-items li a:active {
+    color: #060A24;
+    font-weight: 400;
+    opacity: 0.56;
   }
   #intro {
     margin-left: 200px;

@@ -33,10 +33,12 @@ h2 {
 button {
     width: 226px; //
     height: 56px; //
-    border: 0px;
-    background-color: $mainBkColor;
-    font-weight: 500;
     font-size: 1.8rem; //
+    
+    &:hover {
+        color: $altTextColor;
+        background: $gradBtColor; //
+    }
 }
 
 // Sections //
@@ -77,6 +79,18 @@ header {
         
                 a {
                     color: $mainTextColor; //
+                    
+                    &:hover {
+                        text-decoration: line-through;
+                        color: $hoverTextColor;
+                        font-weight: 500;
+                    }
+
+                    &:active {
+                        color: $mainTextColor;
+                        font-weight: 400;
+                        opacity: 0.56;
+                    }
                 }
             }
         }
