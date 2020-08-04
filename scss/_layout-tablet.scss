@@ -1,7 +1,8 @@
 .ctBlock {
 
-    max-width: 1440px;
-    min-width: $minDesktop;
+    max-width: 1280px; // Tablet
+    min-width: 1280px; // Tablet
+
 }
 
 section {
@@ -30,11 +31,6 @@ button {
     width: 226px; 
     height: 56px; 
     font-size: 1.8rem; 
-    
-    &:hover {
-        color: $altTextColor;
-        background: $gradBtColor; 
-    }
 }
 
 // Sections //
@@ -75,18 +71,6 @@ header {
         
                 a {
                     color: $mainTextColor; 
-                    
-                    &:hover {
-                        text-decoration: line-through;
-                        color: $hoverTextColor;
-                        font-weight: 500;
-                    }
-
-                    &:active {
-                        color: $mainTextColor;
-                        font-weight: 400;
-                        opacity: 0.56;
-                    }
                 }
             }
         }
@@ -141,16 +125,15 @@ header {
     }
 
     .ctFlex {
-        width: 1240px;
+        width: 1200px;  // Tablet
         flex-direction: row; 
         flex-wrap: wrap; 
-        gap: 72px; 
+        gap: 40px; // Tablet
         margin-top: 26px; 
     }
 
     .podcastBox {
-        width: 584px; 
-        height: 232px; 
+        width: 580px; // Tablet
         margin-top: unset; 
 
         &:first-child {
@@ -201,12 +184,13 @@ header {
         h2 {
             margin-top: 64px; 
             align-self: flex-start; 
-            margin-left: 200px; 
+            margin-left: 200px;
+            width: auto; // Tablet
         }
 
         .ctGrid {
             margin-top: 36px; 
-            grid-template-columns: 1fr 1fr 1fr; 
+            grid-template-columns: 1fr 1fr; // Tablet
 
         }
 }

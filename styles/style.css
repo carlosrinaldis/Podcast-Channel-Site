@@ -369,6 +369,254 @@ footer aside.ctFlex {
           justify-content: space-between;
 }
 
+@media (min-width: 576px) and (max-width: 1280px) {
+  .ctBlock {
+    max-width: 1280px;
+    min-width: 1280px;
+  }
+  section {
+    padding: 0px;
+  }
+  p {
+    width: 629px;
+    font-size: 1.6rem;
+  }
+  h1 {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+    font-weight: unset;
+  }
+  h2 {
+    font-size: 4.8rem;
+  }
+  button {
+    width: 226px;
+    height: 56px;
+    font-size: 1.8rem;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80px;
+    padding: 22px 100px;
+  }
+  header .-logo {
+    width: 36px;
+    height: 36px;
+  }
+  header .menu label {
+    display: none;
+  }
+  header .menu .-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    min-width: 433px;
+    height: 36px;
+    top: 0;
+    left: 0;
+    padding: 0px;
+    background-color: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .menu .-items li {
+    margin-top: 0px;
+    margin-left: 48px;
+  }
+  header .menu .-items li a {
+    color: #060A24;
+  }
+  #intro {
+    margin-left: 200px;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
+  #intro h1 {
+    width: auto;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 120px;
+  }
+  #intro h1 span:last-child {
+    color: #0000EC;
+  }
+  #intro p {
+    margin-top: 16px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  #intro a {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  #intro button {
+    margin-top: 56px;
+  }
+  #intro .--desktop {
+    display: block;
+  }
+  #intro .--mobile {
+    display: none;
+  }
+  #episodios {
+    height: 1042px;
+    -webkit-clip-path: polygon(0 12%, 0 100%, 100% 88%, 100% 0%);
+            clip-path: polygon(0 12%, 0 100%, 100% 88%, 100% 0%);
+  }
+  #episodios h2 {
+    margin-top: 186px;
+    margin-left: 200px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  #episodios .ctFlex {
+    width: 1200px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 26px;
+  }
+  #episodios .podcastBox {
+    width: 580px;
+    margin-top: unset;
+  }
+  #episodios .podcastBox:first-child {
+    margin-top: unset;
+  }
+  #dondeVenimos {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "a b" "a c";
+    -ms-grid-columns: 458px 464px;
+        grid-template-columns: 458px 464px;
+    grid-column-gap: 63px;
+    grid-row-gap: 24px;
+    margin: auto;
+    width: 1040px;
+    text-align: unset;
+    overflow: hidden;
+    top: -180px;
+    margin-bottom: -180px;
+  }
+  #dondeVenimos img {
+    width: 458px;
+    position: unset;
+    top: 0px;
+    margin-bottom: 0px;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: a;
+  }
+  #dondeVenimos h2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: b;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  #dondeVenimos p {
+    width: auto;
+    margin-top: 0px;
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: c;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  #invitados h2 {
+    margin-top: 64px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 200px;
+    width: auto;
+  }
+  #invitados .ctGrid {
+    margin-top: 36px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  #temas {
+    text-align: center;
+  }
+  #temas h2 {
+    margin-top: 64px;
+    text-align: left;
+    width: auto;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 200px;
+  }
+  #temas .ctFlex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #temas .card {
+    margin-top: 69px;
+  }
+  #temas .card h3 {
+    width: 220px;
+    margin-top: 29px;
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+  #temas .card:first-child {
+    margin-top: 69px;
+  }
+  #temas .card:nth-child(2) {
+    margin-top: 69px;
+  }
+  #novedades {
+    height: 518px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0000FF), to(#0000A3));
+    background: linear-gradient(#0000FF, #0000A3);
+    text-align: center;
+    -webkit-clip-path: polygon(0 25%, 0 100%, 100% 100%, 100% 0);
+            clip-path: polygon(0 25%, 0 100%, 100% 100%, 100% 0);
+    margin-top: 34px;
+  }
+  #novedades h2 {
+    color: #FFFFFF;
+    margin-top: 213px;
+    width: 692px;
+  }
+  #novedades button {
+    width: 345px;
+    margin-top: 36px;
+  }
+  footer {
+    height: 95px;
+    margin: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 100px;
+  }
+  footer p {
+    width: 269px;
+  }
+}
+
 @media (min-width: 1280px) {
   .ctBlock {
     max-width: 1440px;
@@ -559,6 +807,7 @@ footer aside.ctFlex {
     -ms-flex-item-align: start;
         align-self: flex-start;
     margin-left: 200px;
+    width: auto;
   }
   #invitados .ctGrid {
     margin-top: 36px;
