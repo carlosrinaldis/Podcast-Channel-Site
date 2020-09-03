@@ -53,7 +53,7 @@ h2 {
     width: 288px; 
 }
 
-p, button, a, li{
+p, .button, a, li{
     font-family: $fontMono;
     color: $mainTextColor;
 }
@@ -63,14 +63,18 @@ p {
     font-size: 1.4rem;
 }
 
-button {
+.button {
+    display: flex;
     width: 288px;
     height: 48px;
     border: 0px;
     background-color: $mainBkColor;
     font-weight: 500;
     font-size: 1.6rem;
+    align-items: center;
+    justify-content: center;
 }
+
 
 // Sections //
 
@@ -180,7 +184,7 @@ header {
         margin-top: 16px;
     }
 
-    button {
+    .button {
         margin-top: 36px;
     }
 
@@ -304,7 +308,7 @@ header {
         margin-top: 48px;
     }
 
-    button {
+    .button {
         margin-top: 36px;
     }
 }

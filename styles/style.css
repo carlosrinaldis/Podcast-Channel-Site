@@ -83,7 +83,7 @@ h2 {
   width: 288px;
 }
 
-p, button, a, li {
+p, .button, a, li {
   font-family: "IBM Plex Mono", monospace;
   color: #060A24;
 }
@@ -93,13 +93,22 @@ p {
   font-size: 1.4rem;
 }
 
-button {
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 288px;
   height: 48px;
   border: 0px;
   background-color: #00F3BB;
   font-weight: 500;
   font-size: 1.6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header {
@@ -211,7 +220,7 @@ header .menu #menuCheckbox:checked ~ label .-burgerClose {
   margin-top: 16px;
 }
 
-#intro button {
+#intro .button {
   margin-top: 36px;
 }
 
@@ -341,7 +350,7 @@ header .menu #menuCheckbox:checked ~ label .-burgerClose {
   margin-top: 48px;
 }
 
-#novedades button {
+#novedades .button {
   margin-top: 36px;
 }
 
@@ -389,7 +398,7 @@ footer aside.ctFlex {
   h2 {
     font-size: 4.8rem;
   }
-  button {
+  .button {
     width: 226px;
     height: 56px;
     font-size: 1.8rem;
@@ -457,7 +466,7 @@ footer aside.ctFlex {
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
-  #intro button {
+  #intro .button {
     margin-top: 56px;
   }
   #intro .--desktop {
@@ -596,7 +605,7 @@ footer aside.ctFlex {
     margin-top: 213px;
     width: 692px;
   }
-  #novedades button {
+  #novedades .button {
     width: 345px;
     margin-top: 36px;
   }
@@ -637,12 +646,21 @@ footer aside.ctFlex {
   h2 {
     font-size: 4.8rem;
   }
-  button {
+  .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 226px;
     height: 56px;
     font-size: 1.8rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  button:hover {
+  .button:hover {
     color: #FFFFFF;
     background: -webkit-gradient(linear, right top, left top, from(#0000FE), to(#00F0B8));
     background: linear-gradient(to left, #0000FE, #00F0B8);
@@ -720,7 +738,7 @@ footer aside.ctFlex {
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
-  #intro button {
+  #intro .button {
     margin-top: 56px;
   }
   #intro .--desktop {
@@ -860,7 +878,7 @@ footer aside.ctFlex {
     margin-top: 213px;
     width: 692px;
   }
-  #novedades button {
+  #novedades .button {
     width: 345px;
     margin-top: 36px;
   }
